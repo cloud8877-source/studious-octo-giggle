@@ -1,144 +1,94 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Expert Estate Planning Services in Malaysia</title>
-    <link rel="stylesheet" href="index.css">
+<html lang="en-MY">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Malaysia Estate Planner | Secure Your Legacy</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Professional estate planning services in Malaysia, including will drafting, trust setup, and life insurance review. Secure your family's future with expert guidance." />
+    <meta name="keywords" content="Estate Planning Malaysia, Will Drafting, Trust Setup, Insurance Trust, Legacy Planning, Financial Planning, Wealth Management, Johor Bahru" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Poppins', sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .section-fade-in {
+        opacity: 0;
+        animation: fadeInUp 0.8s ease-out forwards;
+      }
+      @keyframes spin {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+      }
+      @keyframes grid {
+        0% { transform: translateY(0%); }
+        100% { transform: translateY(-50%); }
+      }
+    </style>
+
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "EstateWealth MY",
+      "description": "Professional estate planning services in Malaysia, including will drafting, trust setup, and life insurance review. Secure your family's future with expert guidance.",
+      "image": "https://scontent.fkul3-5.fna.fbcdn.net/v/t39.30808-6/538799227_1183663956902286_1566685595467441692_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=DzaNeTRSnj0Q7kNvwHo8Rq3&_nc_oc=AdlkeHCIKX6OrtgqmkUG0GtTEYsq0ezw8jq-SAdmS5CcLAfndpNSXS-YhbAtdVPAaAQkU2R4S09syWOl1qRGc8bo&_nc_zt=23&_nc_ht=scontent.fkul3-5.fna&_nc_gid=U_tOFjcI-tK10EqOwDhM-g&oh=00_Afd597igRxiUVR1ngGAKMwr2i5x6VRBpdVRNAeuATm2kJw&oe=68FED52C",
+      "telephone": "+60108828127",
+      "email": "cloud8877@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Johor Bahru",
+        "addressCountry": "MY"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Malaysia"
+      },
+      "serviceType": [
+        "Will Drafting",
+        "Trust Setup",
+        "Insurance Review",
+        "Insurance Trust Setup"
+      ]
+    }
+    </script>
+
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.26.0"
+  }
+}
+</script>
 <link rel="stylesheet" href="/index.css">
 </head>
-<body>
-    <header class="header">
-        <div class="container">
-            <a href="#" class="logo">EstatePlan MY</a>
-        </div>
-    </header>
-
-    <main>
-        <section class="hero">
-            <canvas id="hero-canvas"></canvas>
-            <div class="hero-content container">
-                <h1>Expert Estate Planning Services in Malaysia: Will Drafting, Trust Setup, and Insurance Trusts</h1>
-                <p class="sub-headline">Protect your wealth, secure your family's future, and gain peace of mind with legally sound estate planning solutions tailored for Malaysians.</p>
-                <button class="cta-button" onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });">Book a Free Consultation</button>
-            </div>
-        </section>
-
-        <section class="services">
-            <div class="container">
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"/><path d="m15 5 4 4"/></svg>
-                    </div>
-                    <h2>Professional Will Drafting</h2>
-                    <p>Ensure your assets are distributed according to your wishes. Our streamlined, confidential, and legally compliant process makes will drafting straightforward and secure.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/><path d="m9 12 2 2 4-4"/></svg>
-                    </div>
-                    <h2>Secure Trust Setup</h2>
-                    <p>Protect your beneficiaries and fast-track inheritance while avoiding complex probate issues. We customize trusts for both conventional and Islamic needs in Malaysia.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12a10 10 0 1 1-20 0Z"/><path d="M12 12a5 5 0 0 0-5 5"/><path d="M12 8a2 2 0 0 0-2 2"/></svg>
-                    </div>
-                    <h2>Insurance Trust & Asset Protection</h2>
-                    <p>Combine your life insurance with a trust for superior asset protection. This strategy allows beneficiaries to access funds quickly, circumventing lengthy probate for immediate security.</p>
-                </div>
-            </div>
-        </section>
-        
-        <section id="about" class="about">
-            <div class="container about-container">
-                <img src="https://i.imgur.com/L1zAV5d.jpeg" alt="A professional headshot of Wong Guo Xiang" class="profile-picture">
-                <div class="about-text">
-                    <h2>About Our Expertise</h2>
-                    <p>Wong Guo Xiang is a dedicated estate planning consultant based in Malaysia, committed to helping individuals and families secure their financial legacies. With specialized expertise in will drafting, trust setup, and insurance trusts, he provides tailored, legally-sound solutions that offer both protection and peace of mind. His client-centric approach ensures that every plan is crafted with precision, confidentiality, and a deep understanding of Malaysian law.</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="features" class="features">
-            <div class="container">
-                <h2 class="section-title">Why Choose Us?</h2>
-                <div class="features-grid">
-                     <div class="feature-card card-1">
-                        <div class="card-content">
-                            <div class="number-display">100%</div>
-                            <h3>Customizable</h3>
-                            <p>Tailored solutions to fit your unique family and financial situation.</p>
-                        </div>
-                    </div>
-                    <div class="feature-card card-2">
-                         <div class="card-content">
-                            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-                            <h3>Secure by Default</h3>
-                            <p>We prioritize confidentiality and legal compliance in all our services.</p>
-                        </div>
-                    </div>
-                    <div class="feature-card card-3">
-                        <div class="card-content">
-                             <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-                            <h3>Faster than Light</h3>
-                            <p>Streamlined processes to ensure timely setup and execution of your plans.</p>
-                        </div>
-                    </div>
-                    <div class="feature-card card-4">
-                        <div class="card-content">
-                            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 00-3-3.87"></path><path d="M16 3.13a4 4 0 010 7.75"></path></svg>
-                            <h3>Keep Loved Ones Safe</h3>
-                            <p>Our ultimate goal is to provide lasting financial security for your family.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        <section id="contact" class="cta-final">
-            <div class="container">
-                <h2>Ready to Protect Your Family's Future?</h2>
-                <p>Don't leave it to chance. Schedule a confidential, no-obligation consultation with our expert today.</p>
-                <form class="contact-form" id="contact-form" novalidate>
-                    <div class="form-row">
-                        <div class="form-control">
-                            <label for="name" class="sr-only">Name</label>
-                            <input type="text" id="name" placeholder="Your Name" required aria-invalid="false">
-                            <small class="error-message" id="name-error"></small>
-                        </div>
-                        <div class="form-control">
-                             <label for="email" class="sr-only">Email</label>
-                            <input type="email" id="email" placeholder="Your Email" required aria-invalid="false">
-                            <small class="error-message" id="email-error"></small>
-                        </div>
-                    </div>
-                    <div class="form-control">
-                         <label for="phone" class="sr-only">Contact Number (Optional)</label>
-                        <input type="tel" id="phone" placeholder="Contact Number (Optional)">
-                    </div>
-                    <div class="form-control">
-                         <label for="message" class="sr-only">Message (Optional)</label>
-                        <textarea id="message" placeholder="Your Message (Optional)"></textarea>
-                    </div>
-                    <button type="submit">Book My Free Consultation</button>
-                    <div id="form-success-message" class="form-success-message" role="alert"></div>
-                </form>
-            </div>
-        </section>
-    </main>
-
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2024 EstatePlan MY. All Rights Reserved.</p>
-        </div>
-    </footer>
-
-    <script type="module" src="index.tsx"></script>
-<script type="module" src="/index.tsx"></script>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
 </body>
 </html>
